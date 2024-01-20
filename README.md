@@ -1,7 +1,7 @@
 ### Hi there 👋
 My name is Suryansh as you might have guessed from my profile.
-It basically means being a part of the sun (yeah my parents have really high ambitions for me i guess)
-It's all good though, I like my name and its a bit unique
+It basically means being a part of the sun (yeah my parents have really high ambitions for me i guess).
+It's all good though, I like my name and its a bit unique.
 Don't ask me about the ambition part though, I'm still figuring out my own.
 
 ## Current Status
