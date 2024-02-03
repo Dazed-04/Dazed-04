@@ -1,0 +1,197 @@
+#include <iostream>
+using namespace std;
+
+// Node structure definition
+typedef struct Node {
+    int data;
+    Node* next;
+} Node;
+
+// Global variables
+Node* head = nullptr;
+
+// Function prototypes
+void findNodeByData(int data);
+void removeHead();
+bool removeNode(int data);
+void insertNode(int data, int position);
+int nodeCount();
+void printNodes();
+
+int main() {
+    // Predefined nodes
+    Node* current = new Node; // Predefined node #1
+    current->data = 1;
+    Node* tail = current;
+    head = current;
+
+    current = new Node; // Predefined node #2
+    current->data = 2;
+    tail->next = current;
+    tail = current;
+
+    current = new Node; // Predefined node #3
+    current->data = 3;
+    tail->next = current;
+    tail = current;
+
+    current = new Node; // Predefined node #4
+    current->data = 4;
+    tail->next = current;
+    tail = current;
+    current->next = nullptr;
+
+    // Ask for printing total number of nodes
+    cout << "Do you want to output the number of nodes?" << endl
+         << "Type 1 for Yes" << endl << "Type 2 for No" << endl << "Your Choice: ";
+    int choice;
+    cin >> choice;
+    if (choice == 1) {
+        cout << "The current number of nodes is " << nodeCount() << endl;
+    }
+
+    // Ask for node insertion
+    cout << "-----------------------------------------------------------------" << endl;
+    cout << "Do you want to insert a node?" << endl
+         << "Type 1 for Yes" << endl << "Type 2 for No" << endl << "Your Choice: ";
+    cin >> choice;
+    if (choice == 1) {
+        cout << "Enter the data and position for new node: ";
+        int data, pos;
+        cin >> data >> pos;
+        insertNode(data, pos);
+    }
+
+    // Ask for node removal
+    cout << "-----------------------------------------------------------------" << endl;
+    cout << "Do you want to remove a node?" << endl
+         << "Type 1 for Yes" << endl << "Type 2 for No" << endl << "Your Choice: ";
+    cin >> choice;
+    int data;
+    if (choice == 1) {
+        cout << "Enter the data of node to remove: ";
+        cin >> data;
+        if (removeNode(data)) {
+            cout << "Node removed successfully." << endl;
+        } else {
+            cout << "No such node found in list." << endl;
+        }
+    }
+
+    // Ask for using Pop
+    cout << "-----------------------------------------------------------------" << endl;
+    cout << "Do you want to use Pop?" << endl
+         << "Type 1 for Yes" << endl << "Type 2 for No" << endl << "Your Choice: ";
+    cin >> choice;
+    if (choice == 1) {
+        removeHead();
+    }
+
+    // Ask for printing current nodes
+    cout << "-----------------------------------------------------------------" << endl;
+    cout << "Do you want to print the current nodes?" << endl
+         << "Type 1 for Yes" << endl << "Type 2 for No" << endl << "Your Choice: ";
+    cin >> choice;
+    if (choice == 1) {
+        printNodes();
+    }
+
+    // Ask for finding a node
+    cout << "-----------------------------------------------------------------" << endl;
+    cout << "Do you want to find a node?" << endl
+         << "Type 1 for Yes" << endl << "Type 2 for No" << endl << "Your Choice: ";
+    cin >> choice;
+    if (choice == 1) {
+        cout << "Enter the data of node you want to search: ";
+        int searchData;
+        cin >> searchData;
+        findNodeByData(searchData);
+    }
+
+    return 0;
+}
+
+void insertNode(int data, int position) { 
+    Node* currentNode = head;
+    int currentPosition = 1;
+    while (++currentPosition < position) {
+        currentNode = currentNode->next;
+    }
+    Node* newNode = new Node;
+    newNode->data = data;
+    newNode->next = currentNode->next;
+    currentNode->next = newNode;
+}
+
+void removeHead() { 
+    if (head == nullptr) {
+        cout << "List is empty. Nothing to remove." << endl;
+        return;
+    }
+    Node* temp = head;
+    head = head->next;
+    delete temp;
+}
+
+bool removeNode(int data) {
+    if (head == nullptr) {
+        return false; // List is empty
+    }
+    if (head->data == data) {
+        removeHead();
+        return true;
+    }
+    Node* prevNode = head;
+    Node* currNode = head->next;
+    while (currNode != nullptr) {
+        if (currNode->data == data) {
+            prevNode->next = currNode->next;
+            delete currNode;
+            return true;
+        }
+        prevNode = currNode;
+        currNode = currNode->next;
+    }
+    return false; // Node with specified data not found
+}
+
+void findNodeByData(int data) {
+    if (head == nullptr) {
+        cout << "List is empty. Cannot find node." << endl;
+        return;
+    }
+    Node* currentNode = head;
+    int position = 1;
+    while (currentNode != nullptr) {
+        if (currentNode->data == data) {
+            cout << "Node found at position " << position << endl;
+            return;
+        }
+        currentNode = currentNode->next;
+        position++;
+    }
+    cout << "Node with data " << data << " not found in list." << endl;
+}
+
+int nodeCount() {
+    int count = 0;
+    Node* currentNode = head;
+    while (currentNode != nullptr) {
+        count++;
+        currentNode = currentNode->next;
+    }
+    return count;
+}
+
+void printNodes() {
+    if (head == nullptr) {
+        cout << "List is empty." << endl;
+        return;
+    }
+    Node* currentNode = head;
+    while (currentNode != nullptr) {
+        cout << currentNode->data << " ";
+        currentNode = currentNode->next;
+    }
+    cout << endl;
+}
