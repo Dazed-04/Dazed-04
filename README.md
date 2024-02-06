@@ -13,7 +13,7 @@ As my bio says I like all things technology, that includes everything from fun f
 I like learning and consider myself an avid learner but I also get bummed when I fail at said things (I'm only human too).
 I like arts(both traditional and digital), games, movies, shows and most things one might consider entertaiment.
 Oops can't forget music, that's one thing i like more than most things, who doesn't like a good jam ^_^
-That's about what i can remember for now, maybe I'll update this in the future, who knows
+That's about what i can remember for now, maybe I'll update this in the future, who knows.
 
 
 <!--
