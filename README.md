@@ -1,6 +1,6 @@
 ### Hi there 👋
 My name is Suryansh as you might have guessed from my profile.
-I'm new to github and stil figuring out how things work.
+I'm new to github and still figuring out how things work.
 
 ## Current Status
 I'm currently pursuing a Bachelor's in Technology.
