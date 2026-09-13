@@ -1,32 +1,27 @@
-### Hi there 👋
-I'm Suryansh.
-I'm new to github and still figuring out how things work.
+### Hi, I'm Suryansh 👋
 
-## Current Status
-Senior Year B.Tech undergraduate,
-majoring in Computer Science and Engineering.
+Final-year Computer Science undergrad focused on cloud infrastructure, DevOps, and backend engineering.
 
-## Working On
-I'm currently learning how to modernize and migrate legacy frameworks to modern alternatives.
-I'm using my complaint-portal web app as a practical way to apply my learning.
+## Currently building
+- 🔧 An event-driven serverless pipeline on AWS (Lambda, SQS/SNS, DynamoDB, API Gateway), provisioned with Terraform and tested locally against LocalStack
+- 🧱 A Java backend I'm migrating from hand-written Servlets/JSP to Spring Framework + Hibernate, one version at a time
 
-## Interests
-- Music
-- Gaming
-- Embedded Systems
-- Cyberdeck projects
+## Also built
+- 🖥️ [yt-media](https://github.com/Dazed-04/Get-media) — a terminal UI for searching, previewing, and batch-downloading media via yt-dlp, used daily
+- 🛡️ [CloudSec Guardian](https://github.com/Dazed-04/cloudsec-guardian) — a CloudTrail-based tool that flags risky AWS activity and auto-remediates removed security groups/buckets
+- 🖼️ [JPEG Compression Visualizer](https://github.com/Dazed-04/jpeg-compressor) — a from-scratch JPEG-style compression pipeline (2D DCT, quantization) with a before/after preview
 
-<!--
-**Dazed-04/Dazed-04** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Currently learning
+Modernizing legacy Java applications — moving from raw Servlets/JDBC toward Spring + Hibernate — and picking up Kubernetes as the next step after Terraform.
 
-Here are some ideas to get you started:
+## Certifications
+AWS Certified Cloud Practitioner · Cisco CCNA (1–3) · Cisco CyberOps Associate
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Dotfiles
+Running Arch — [my configs](https://github.com/Dazed-04/arch-dotfiles) are public if you want to dig through them or steal something useful.
+
+## Beyond code
+🎵 Music · 🎮 Gaming · 🔩 Embedded systems · 🖥️ Cyberdeck builds
+
+## Reach me
+[LinkedIn](https://linkedin.com/in/suryansh-singh-a02749425)
