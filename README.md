@@ -7,7 +7,7 @@ Final-year Computer Science undergrad focused on cloud infrastructure, DevOps, a
 - 🧱 A Java backend I'm migrating from hand-written Servlets/JSP to Spring Framework + Hibernate, one version at a time
 
 ## Also built
-- 🖥️ [yt-media](https://github.com/Dazed-04/Get-media) — a terminal UI for searching, previewing, and batch-downloading media via yt-dlp, used daily
+- 🖥️ [YT Media](https://github.com/Dazed-04/yt-media) — a terminal UI for searching, previewing, and batch-downloading media via yt-dlp, used daily
 - 🛡️ [CloudSec Guardian](https://github.com/Dazed-04/cloudsec-guardian) — a CloudTrail-based tool that flags risky AWS activity and auto-remediates removed security groups/buckets
 - 🖼️ [JPEG Compression Visualizer](https://github.com/Dazed-04/jpeg-compressor) — a from-scratch JPEG-style compression pipeline (2D DCT, quantization) with a before/after preview
 
